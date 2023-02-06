@@ -19,7 +19,7 @@
 
 Sql запрос: 
 
-	SELECT p.Name AS ProductName, c.Name AS ProductCategory
+	SELECT TOP(1000) p.Name AS ProductName, c.Name AS ProductCategory
 	FROM Product AS p
 	LEFT JOIN CategoryProduct AS cp
 		ON cp.ProductId = p.Id
